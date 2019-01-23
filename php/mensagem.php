@@ -102,7 +102,7 @@
 	if ($output_form) {
  ?>
 
- <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+ <form  action="<?php $_SERVER['PHP_SELF'] ?>" method="post" class="form">
 
    <div class="col-md-4 offset-md-4">
    <div class="card text-center">
