@@ -1,3 +1,3 @@
 // Index.js - Cloak
-<script>
+ <script>
   </script>
