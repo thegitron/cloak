@@ -1,4 +1,5 @@
 // mensagem.php - CLOAK
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,15 +73,13 @@
    <input type="text" name="email">
    
    <label>Deixe Seu comentário aqui!</label>
-   <textarea placeholder="Espaço Para digitação..."></textarea>
+   <textarea name="msg" placeholder="Espaço Para digitação..."></textarea>
    
    <input type="submit" name="enviar" value="Enviar Mensagem">
    
    </div>
    </div>
-     
-	 
-
+    
    </form>
 
 </body>
