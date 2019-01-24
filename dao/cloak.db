@@ -14,31 +14,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `camisa`
---
-
-DROP TABLE IF EXISTS `camisa`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `camisa` (
-  `id_camisa` int(5) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(30) NOT NULL,
-  `tamanho` varchar(3) NOT NULL,
-  `valor` float(5,2) NOT NULL,
-  PRIMARY KEY (`id_camisa`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `camisa`
---
-
-LOCK TABLES `camisa` WRITE;
-/*!40000 ALTER TABLE `camisa` DISABLE KEYS */;
-/*!40000 ALTER TABLE `camisa` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `mensagem`
 --
 
@@ -46,9 +21,9 @@ DROP TABLE IF EXISTS `mensagem`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `mensagem` (
-  `id_mensagem` int(5) NOT NULL AUTO_INCREMENT,
-  `email` varchar(30) NOT NULL,
-  `mensagem` varchar(300) NOT NULL,
+  `id_mensagem` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(150) NOT NULL,
+  `mensagem` varchar(1000) NOT NULL,
   PRIMARY KEY (`id_mensagem`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -63,28 +38,53 @@ LOCK TABLES `mensagem` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `usuario`
+-- Table structure for table `produtos`
 --
 
-DROP TABLE IF EXISTS `usuario`;
+DROP TABLE IF EXISTS `produtos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `usuario` (
-  `id_usuario` int(5) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `senha` varchar(32) NOT NULL,
-  PRIMARY KEY (`id_usuario`)
+CREATE TABLE `produtos` (
+  `id_produtos` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(80) NOT NULL,
+  `tamanho` varchar(3) NOT NULL,
+  `valor` float(5,2) NOT NULL,
+  PRIMARY KEY (`id_produtos`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `usuario`
+-- Dumping data for table `produtos`
 --
 
-LOCK TABLES `usuario` WRITE;
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+LOCK TABLES `produtos` WRITE;
+/*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuarios` (
+  `id_usuarios` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(80) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_usuarios`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -95,3 +95,4 @@ UNLOCK TABLES;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
