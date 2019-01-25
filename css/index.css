@@ -19,11 +19,10 @@ h1{
 footer{
   margin-top: 4rem;
   background: black;
-  color: var(--light);
+  color: white;
   text-align: center;
   padding: 1.6rem;
- 
-  box-shadow: var(--shadow);
+
 }
 
 
