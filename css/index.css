@@ -1,16 +1,30 @@
+
+
+*{margin: 0;
+  padding: 0;}
+
 h1{
-	text-align:center;
-	color:white;
+	 text-align:center;
+	 color:white;
+	 padding-top:1%;
+	 padding-bottom:1%;
+}
 
-   }
 
-
-   
 #style {
 	
 	background-color:black;
-	
-	
 }
+
+footer{
+  margin-top: 4rem;
+  background: black;
+  color: var(--light);
+  text-align: center;
+  padding: 1.6rem;
+ 
+  box-shadow: var(--shadow);
+}
+
 
 
