@@ -13,3 +13,12 @@ h1{
 	
 	
 }
+
+footer{
+  margin-top: 4rem;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1.6rem;
+
+}
