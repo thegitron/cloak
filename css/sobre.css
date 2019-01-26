@@ -1,1 +1,24 @@
 
+h1{
+	text-align:center;
+	color:white;
+
+   }
+
+
+
+#style {
+	
+	background-color:black;
+	
+	
+}
+
+footer{
+  margin-top: 4rem;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1.6rem;
+
+}
