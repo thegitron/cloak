@@ -11,13 +11,14 @@
       <title>C L O A K</title>
    </head>
    <body> 
+
       <!-- Início do Cabeçalho -->
       <header id="style">
 	<h1>C L O A K</h1>
 
 	<!-- Início da Barra de Navegação -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-           <a class="navbar-brand" href="#">
+           <a class="navbar-brand" href="index.php">
 	      <img src="https://goodweave.org/wp-content/uploads/2017/03/Logo_cloak.png" width="45" height="30">
            </a>
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Login</a>
+        <?php
+        $login_cookie = $_COOKIE['email'];
+	if(isset($login_cookie)) {
+	   echo "
+        <a class='nav-link' href='html/login.html'>Login</a> ";
+	}else{
+	 echo "
+        <a class='nav-link' href='html/login.html'>Sair</a> ";
+	}
+        ?>
       </li>
 
       <li class="nav-item">
@@ -333,4 +343,3 @@
    
 
 </html>
-
