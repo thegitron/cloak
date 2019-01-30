@@ -94,7 +94,7 @@ if(isset($_POST['buscar'])){
          header("location:html/busca/vanbusca.html");
          break;
       default:
-         header("location:html/busca/nobusca.html");
+         header("location:html/busca/nenhumbusca.html");
   } 
 }
 ?>
