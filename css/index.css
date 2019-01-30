@@ -25,5 +25,16 @@ footer{
 
 }
 
+.link {
+   text-decoration: none;
+   color: #fff;
+}
+
+.link:hover {
+   text-decoration: none;
+   color: #777;
+}
+
+
 
 

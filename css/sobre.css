@@ -1,7 +1,6 @@
-
 h1{
-	text-align:center;
-	color:white;
+	text-align: center;
+	color: white;
 
    }
 
@@ -9,9 +8,19 @@ h1{
 
 #style {
 	
-	background-color:black;
+	background-color: black;
 	
 	
+}
+
+.link {
+   text-decoration: none;
+   color: #fff;
+}
+
+.link:hover {
+   text-decoration: none;
+   color: #777;
 }
 
 footer{
@@ -22,3 +31,4 @@ footer{
   padding: 1.6rem;
 
 }
+
