@@ -1,4 +1,4 @@
-<!-- Má implementação -->
+
 <?php
 if(isset($_POST['buscar'])){
    $banda = $_POST['banda'];
