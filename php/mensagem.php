@@ -10,7 +10,7 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>	 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="#">
+      <link rel="stylesheet" type="text/css" href="../css/formularios.css">
 
 <title>Fale Conosco</title>
 </head>
@@ -50,9 +50,9 @@
 
     </ul>
 
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar...  " aria-label="Search">
-      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+    <form action="../busca.php" method="post" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Buscar...  " aria-label="Search" name="banda">
+      <input class="btn btn-outline-dark my-2 my-sm-0" type="submit" name="buscar" value="Pesquisar">
     </form>
   </div>
 </nav>
@@ -82,7 +82,7 @@
 			$output_form = true;
 		}
 		if (!empty($email) && (!empty($mensagem))) {
-			$dbc = mysqli_connect('localhost','usuario','senha','cloak')
+			$dbc = mysqli_connect('localhost','ron','luxettenubra0=xx=','cloak')
 			   or die ('Não foi possível conectar-se ao servidor');
 
 			$query = "INSERT INTO mensagem (email, mensagem) VALUES ('$email','$mensagem')";
